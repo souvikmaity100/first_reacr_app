@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/first_reacr_app/static/css/main.073c9b0a.css",
+    "main.js": "/first_reacr_app/static/js/main.089c6c4a.js",
+    "static/js/594.55f60d27.chunk.js": "/first_reacr_app/static/js/594.55f60d27.chunk.js",
+    "index.html": "/first_reacr_app/index.html",
+    "main.073c9b0a.css.map": "/first_reacr_app/static/css/main.073c9b0a.css.map",
+    "main.089c6c4a.js.map": "/first_reacr_app/static/js/main.089c6c4a.js.map",
+    "594.55f60d27.chunk.js.map": "/first_reacr_app/static/js/594.55f60d27.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.089c6c4a.js"
+  ]
+}
