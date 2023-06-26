@@ -1,34 +1,40 @@
 import React, { useState } from 'react'
 
 
-export default function About() {
+export default function About(props) {
 
-    const [DarkStyle, setDarkStyle] = useState({
-        color: 'black',
-        backgroundColor: 'white'
-    });
+    // const [DarkStyle, setDarkStyle] = useState({
+    //     color: 'black',
+    //     backgroundColor: 'white'
+    // });
 
-    const [btnText, setBtnText] = useState('Enabel dark mode')
+    // const [btnText, setBtnText] = useState('Enabel dark mode');
 
-    let toggleStyle = ()=>{
-        if (DarkStyle.color === 'black') {
-            setDarkStyle ({
-                color: '#fff',
-                backgroundColor: 'rgb(33,37,41)'
-            });
-            setBtnText('Enebel light mode');
-        }
-        else{
-            setDarkStyle ({
-                color: 'black',
-                backgroundColor: 'white'
-            });
-            setBtnText('Enebel dark mode');
-        }
+    // let toggleStyle = ()=>{
+    //     if (DarkStyle.color === 'black') {
+    //         setDarkStyle ({
+    //             color: '#fff',
+    //             backgroundColor: 'rgb(33,37,41)'
+    //         });
+    //         setBtnText('Enebel light mode');
+    //     }
+    //     else{
+    //         setDarkStyle ({
+    //             color: 'black',
+    //             backgroundColor: 'white'
+    //         });
+    //         setBtnText('Enebel dark mode');
+    //     }
+    // }
+
+    let DarkStyle ={
+        color: props.mode === 'light'? "black":"white",
+        backgroundColor: props.mode === 'light'? "white":"#282A3A"
     }
 
+
   return (
-    <div className="container py-3" style={DarkStyle}>
+    <div className="container py-3" >
         <h2>About Us</h2>
         <div className="accordion" id="accordionExample">
             <div className="accordion-item" >
@@ -68,7 +74,7 @@ export default function About() {
                 </div>
             </div>
         </div>
-        <button type='button' onClick={toggleStyle} className='btn btn-primary m-2'>{btnText}</button>
+        {/* <button type='button' onClick={toggleStyle} className='btn btn-primary m-2'>{btnText}</button> */}
     </div>
   )
 }
